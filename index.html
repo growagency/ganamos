@@ -3,34 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <title>Redirigiendo...</title>
-  <meta http-equiv="refresh" content="0; url='https://wa.me/5492234661452?text=Quiero%20crear%20un%20usuario%20%F0%9F%8E%B0'" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f5f5f5;
-      padding: 60px 20px;
+      background-color: #f9f9f9;
       color: #333;
+      text-align: center;
+      padding-top: 100px;
     }
-    .btn {
-      display: inline-block;
+    .loader {
       margin-top: 20px;
-      padding: 12px 20px;
-      background-color: #25D366;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 16px;
+      border: 6px solid #ccc;
+      border-top: 6px solid #25D366;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      display: inline-block;
     }
-    p {
-      font-size: 16px;
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
   </style>
+  <script>
+    setTimeout(function() {
+      window.location.href = "https://wa.me/5492234661452?text=Quiero%20crear%20un%20usuario%20🎰";
+    }, 2000); // 2000 milisegundos = 2 segundos
+  </script>
 </head>
 <body>
-  <p>Redirigiendo automáticamente a WhatsApp...</p>
-  <p>Si no fuiste redirigido, tocá el botón:</p>
-  <a href="https://wa.me/5492234661452?text=Quiero%20crear%20un%20usuario%20%F0%9F%8E%B0" class="btn">Ir a WhatsApp</a>
+  <h2>Cargando contenido… </h2>
+  <div class="loader"></div>
 </body>
 </html>
